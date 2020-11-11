@@ -12,7 +12,7 @@ def hello():
     },
     "product2": {
         "name": "Kite",
-        "species": "India"
+        "species": "Maldives"
     }
     } 
     return data
