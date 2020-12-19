@@ -1,6 +1,7 @@
-FROM python:alpine3.7
-COPY . /app
-WORKDIR /app
+FROM python:3.7.3-alpine3.9
+RUN mkdir /myapp
+WORKDIR /myapp
+COPY kg.py /myapp
+COPY requirements.txt /myapp
 RUN pip install -r requirements.txt
-EXPOSE 5000
-CMD python ./index.py
+ENTRYPOINT [ "python", "-u", "/myapp/kg.py" ]
