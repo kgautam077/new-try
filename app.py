@@ -19,7 +19,7 @@ def hello_world():
 },
 {
 	"name": "FD34567",
-	"detail": "Microwave",
+	"detail": "Microwave20",
 	"price": "20000"
 }]"""
 
